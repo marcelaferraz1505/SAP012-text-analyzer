@@ -1,0 +1,29 @@
+body{
+    background-color: lightpink;
+    text-align:center
+}
+header {
+    color: aliceblue;  
+}
+
+h1{
+    background-color: darkviolet;
+}
+ul {
+    list-style:none;
+    
+
+}
+.contagem {
+    color: blueviolet; background-color: aliceblue; border:solid 2px violet; margin: 25px; padding: 5px; border-radius: 25px;
+   
+}
+textarea[name="user-input"] {
+    color: brown;
+    background-color: antiquewhite;
+    padding: 100px;    
+}
+#reset-button {background-color: blueviolet;color: aliceblue;padding: 15px; border-radius: 25px;}
+footer{
+    color: darkmagenta; font-family: Arial, Helvetica, sans-serif;font-size: 20px;
+}

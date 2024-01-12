@@ -6,8 +6,8 @@ import analyzer from './analyzer.js';
 const wordCount = document.querySelector ("[data-testid='word-count']");
 const characterCount = document.querySelector ("[data-testid='character-count']");
 const characterNoSpacesCount = document.querySelector ("       [data-testid='character-no-spaces-count']");
-/*const numberCount = document.querySelector ("[data-testid='number-count']");
-const numberSum = document.querySelector ("[data-testid='number-sum']");*/
+const numberCount = document.querySelector ("[data-testid='number-count']");
+const numberSum = document.querySelector ("[data-testid='number-sum']");
 const wordLengthAverage = document.querySelector ("[data-testid='word-length-average']");
 const textarea = document.querySelector ("[name='user-input']");
    
@@ -22,25 +22,19 @@ textarea.addEventListener('input',()=>{
   const caracteres = "contagem de caracteres: " + analyzer.getCharacterCount (textarea.value);
   const palavras = "contagem de palavras: " +analyzer.getWordCount (textarea.value);
   const espaços = "contagem de caracteres sem espaços: " + analyzer.getCharacterNoSpacesCount(textarea.value);
-  const comprimento = "contagem média das palavras: " + analyzer.getWordLengthAverage (textarea.value);/*const contandoNúmeros = "contagem de numeros: " + analyzer.getNumberCount (textarea.value);*/
+  const comprimento = "contagem média das palavras: " + analyzer.getWordLengthAverage (textarea.value);
+  const contandoNúmeros = "contagem de numeros: " + analyzer.getNumberCount (textarea.value);
+  const somandoNumeros = "soma de numeros: " + analyzer.getNumberSum (textarea.value);
 
   characterCount.innerHTML= caracteres;
   wordCount.innerHTML= palavras;
-  characterNoSpacesCount.innerHTML= espaços;/*
-  numberCount.innerHTML= contandoNúmeros;numberSum.innerHTML= soma-numerica; */
+  characterNoSpacesCount.innerHTML= espaços;
+  numberCount.innerHTML= contandoNúmeros;
+  numberSum.innerHTML= somandoNumeros; 
   wordLengthAverage.innerHTML= comprimento;
     
 
 });
-/*wordCount.innerHTML= wordCount + analyzer.getWordCount(textarea.value); 
-    CharacterCount.innerHTML = characterCount + analyzer.getWordCount(textarea.value);
-    CharacterCountExcludingSpace.innerHTML= CharacterCountExcludingSpace + analyzer.getCharacterCountExcludingSpace(textarea.value);*/
-    
-
-
-   
-    
-
 
 // evento do botão
     

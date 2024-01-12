@@ -41,17 +41,26 @@ const analyzer = {
 
   },
 
-  /*getNumberCount: (text) => {
+  getNumberCount: (text) => {
     const contandoNumeros = text.match(/\b\d+(\.\d+)?\b/g);
     return contandoNumeros ? contandoNumeros.length : 0;
     
   },
-  /*
+  
   getNumberSum: (text) => {
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    console.log ("getNumberSum");
+    const somandoNumeros = text.match(/\b\d+(\.\.+)?\b/g);
+    if (somandoNumeros) {
+      let total = 0;
+      for (let i=0; i< somandoNumeros.length; i++){
+      total += Number(somandoNumeros[i]);
+      }
+      return total;
+    } else {
+      return 0;
+    }
+    
   },
-};*/
 }
+
 
 export default analyzer;

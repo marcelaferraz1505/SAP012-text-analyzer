@@ -11,13 +11,13 @@ const analyzer = {
     //contando caracteres
     return text.length;
   },
-  getCharacterNoSpacesCount: (text) => {
+  getCharacterCountExcludingSpaces: (text) => {
 
     let count = 0;
     //inicio do loop onde i=0 e continua enquanto i < comprimento do texto. A cada iteração o valor de i aumenta 1
     for (let i = 0; i < text.length; i++) {
       //verificando se o caractere i do texto é diferente de um espaço em branco, se sim, encontramos um caractere que não é um espaço. 
-      if (text[i] !== ' ') {
+      if (text[i] !== ' ' && text[i] !== "." && text[i] !== ",") {
         //incrementando 1 na contagem dos caracteres que não são espaços. 
         count++;
       }
@@ -44,21 +44,21 @@ const analyzer = {
   getNumberCount: (text) => {
     const contandoNumeros = text.match(/\b\d+(\.\d+)?\b/g);
     return contandoNumeros ? contandoNumeros.length : 0;
-    
+
   },
-  
+
   getNumberSum: (text) => {
     const somandoNumeros = text.match(/\b\d+(\.\.+)?\b/g);
     if (somandoNumeros) {
       let total = 0;
-      for (let i=0; i< somandoNumeros.length; i++){
-      total += Number(somandoNumeros[i]);
+      for (let i = 0; i < somandoNumeros.length; i++) {
+        total += Number(somandoNumeros[i]);
       }
       return total;
     } else {
       return 0;
     }
-    
+
   },
 }
 

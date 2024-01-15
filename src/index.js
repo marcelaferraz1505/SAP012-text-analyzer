@@ -22,7 +22,7 @@ textarea.addEventListener('input', () => {
   const caracteres = "contagem de caracteres: " + analyzer.getCharacterCount(textarea.value);
   const palavras = "contagem de palavras: " + analyzer.getWordCount(textarea.value);
   const espaços = "contagem de caracteres sem espaços: " + analyzer.getCharacterCountExcludingSpaces(textarea.value);
-  const comprimento = "contagem média das palavras: " + analyzer.getWordLengthAverage(textarea.value);
+  const comprimento = "contagem média das palavras: " + analyzer.getAverageWordLength(textarea.value);
   const contandoNúmeros = "contagem de numeros: " + analyzer.getNumberCount(textarea.value);
   const somandoNumeros = "soma de numeros: " + analyzer.getNumberSum(textarea.value);
 

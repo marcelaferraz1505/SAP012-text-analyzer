@@ -15,8 +15,13 @@ const textarea = document.querySelector("[name='user-input']");
 //chamar função
 const button = document.getElementById('reset-button');
 button.addEventListener('click', () => {
-  console.log('limpar')
   textarea.value = "";
+  characterCount.innerHTML = 'caracteres : 0'
+  wordCount.innerHTML = 'palavras: 0'
+  characterNoSpacesCount.innerHTML = 'espaços: 0'
+  numberCount.innerHTML = 'contandoNúmeros: 0'
+  numberSum.innerHTML = 'somandoNumeros: 0'
+  wordLengthAverage.innerHTML = 'comprimento: 0'
 });
 textarea.addEventListener('input', () => {
   const caracteres = "contagem de caracteres: " + analyzer.getCharacterCount(textarea.value);
@@ -39,9 +44,9 @@ textarea.addEventListener('input', () => {
 // evento do botão
 
 /* button.addEventListener("click", function (){
-        textarea.value = "";
-        console.log ('limpar')
-    });   */
+       textarea.value = "";
+       console.log ('limpar')
+});      */
 
 
 

@@ -57,7 +57,7 @@ const analyzer = {
     if (somandoNumeros) {
       let total = 0;
       for (let i = 0; i < somandoNumeros.length; i++) {
-        
+
         total += Number(somandoNumeros[i]);
       }
       return total;

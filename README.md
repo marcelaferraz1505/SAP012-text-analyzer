@@ -17,30 +17,23 @@
 ---
 
 ## 1. Considerações gerais
-
-- Este projeto será resolvido de forma **individual**.
-- A estimativa de tempo para completar o projeto varia de 2 a 4 Sprints.
-- Concentre-se em aprender, não apenas em "completar" o projeto.
-- Sugerimos que você não tente saber tudo antes de começar a codificar.
-  Não se preocupe muito com o que você _ainda_ não entende.
-  Você aprenderá ao longo do processo.
+- Meu primeiro projeto.
+- Este projeto foi resolvido de forma **individual**.
+- Projeto realizado em 5 sprints. 
+- Me dediquei a entender cada código usado dentro do projeto.
 
 ## 2. Preâmbulo
 
-![Uma lupa sobre texto de livro](https://github.com/Laboratoria/curriculum/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
+![Uma lupa sobre texto de livro] file:///C:/Users/marce/Downloads/imagemreadme.pdf
 
-_Créditos: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-_em [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
+
 
 Um analisador de texto é uma aplicação para extrair informações úteis de um
 texto utilizando diversas técnicas, como o processamento de linguagem natural
 (PLN),aprendizado de máquina (ML) e análise estatística. Essas aplicações podem
 fornecer uma variedade de métricas que oferecem informações básicas sobre
 o comprimento e a estrutura do texto, como contagem de palavras, contagem de
-caracteres, contagem de sentenças e contagem de parágrafos. Outras métricas
-incluem análise de sentimentos, que utiliza técnicas de PLN para determinar
-o tom geral positivo, negativo ou neutro do texto, e análise de legibilidade,
-que utiliza algoritmos para avaliar a complexidade e legibilidade do texto.
+caracteres, contagem de sentenças e contagem de parágrafos.
 
 Em geral, as aplicações de análise de texto fornecem informações valiosas e métricas
 sobre os textos que podem ajudar os usuários a tomar decisões informadas e tirar
@@ -49,54 +42,48 @@ podem obter uma compreensão mais profunda dos textos.
 
 ## 3. Resumo do projeto
 
-Neste projeto, você criará uma aplicação web que permitirá que a usuária analise
+Neste projeto, eu criei uma aplicação web que permite que a usuária analise
 um texto no navegador, exibindo uma série de indicadores e métricas específicas
-sobre caracteres, letras, números, etc., que foram inseridos por ela como entrada.
-Você realizará isso usando HTML, CSS e JavaScript.
+sobre caracteres, letras, números, etc., que foram inseridos como entrada.
+Realizado utilizando HTML, CSS e JavaScript
 
 ## 4. Funcionalidades
 
 A lista de funcionalidades é a seguinte:
 
-1. A aplicação deve permitir que a usuária insira um texto escrevendo-o
+1. A aplicação permite que a usuária insira um texto escrevendo-o
     em uma caixa de texto.
 
-2. A aplicação deve calcular as seguintes métricas e atualizar o
+2. A aplicação calcula as seguintes métricas e atualiza o
     resultado em tempo real conforme a usuária escreve o texto:
 
-    - **Contagem de palavras**: a aplicação deve ser capaz de contar o número de
+    - **Contagem de palavras**: a aplicação é capaz de contar o número de
     palavras no texto de entrada e mostrar essa contagem para a usuária.
-    - **Contagem de caracteres**: a aplicação deve ser capaz de contar o número de
+    - **Contagem de caracteres**: a aplicação é capaz de contar o número de
     caracteres no texto de entrada, incluindo espaços e sinais de
-    pontuação, e mostrar essa contagem para a usuária.
+    pontuação, e mostra essa contagem para a usuária.
     - **Contagem de caracteres excluindo espaços e sinais de pontuação**:
-    a aplicação deve ser capaz de contar o número de caracteres no texto de
-    entrada, excluindo espaços e sinais de pontuação, e mostrar essa contagem
+    a aplicação é capaz de contar o número de caracteres no texto de
+    entrada, excluindo espaços e sinais de pontuação, e mostra essa contagem
     para a usuária.
-    - **Contagem de números**: a aplicação deve contar quantos números há no
-    texto de entrada e mostrar essa contagem para a usuária.
-    - **Soma total dos números**: a aplicação deve somar todos os números que
-    estão no texto de entrada e mostrar o resultado para a usuária.
-    - **Comprimento médio das palavras**: a aplicação deve calcular o
-    comprimento médio das palavras no texto de entrada e mostrar esse valor para a usuária.
+    - **Contagem de números**: a aplicação conta quantos números há no
+    texto de entrada e mostra essa contagem para a usuária.
+    - **Soma total dos números**: a aplicação soma todos os números que
+    estão no texto de entrada e mostra o resultado para a usuária.
+    - **Comprimento médio das palavras**: a aplicação calcula o
+    comprimento médio das palavras no texto de entrada e mostra esse valor para a usuária.
 
-3. A aplicação deve permitir limpar o conteúdo da caixa de texto ao clicar
+3. A aplicação permite limpar o conteúdo da caixa de texto ao clicar
     em um botão.
 
 ![Demonstração do analisador de texto](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Demonstração do analisador de texto")
 
-## 5. Boilerplate
+## 5. Padrão
+A lógica do projeto é completamente renovada em JavaScript. Neste projeto, NÃO foi permitido o uso de bibliotecas ou frameworks, apenas JavaScript puro, também conhecido como Vanilla JavaScript.
 
-A lógica do projeto deve ser implementada completamente em JavaScript. Neste
-projeto, NÃO é permitido usar bibliotecas ou frameworks, apenas JavaScript
-puro, também conhecido como Vanilla JavaScript.
+Para começar este projeto, precisei fazer um fork e clonar este repositório que contém um padrão com testes. Um boilerplate é uma estrutura básica de um projeto que serve como um ponto de partida com arquivos e configuração inicial de dependências e testes.
 
-Para começar este projeto, você precisará fazer um _fork_ e _clonar_ este
-repositório que contém um _boilerplate_ com testes. Um _boilerplate_
-é a estrutura básica de um projeto que serve como um ponto de partida com
-arquivos e configuração inicial de dependências e testes.
-
-O _boilerplate_ que fornecemos contém a seguinte estrutura:
+O padrão que fornece contém a seguinte estrutura:
 
     ./
     ├── .babelrc
@@ -116,22 +103,22 @@ O _boilerplate_ que fornecemos contém a seguinte estrutura:
 
 ### Descrição de scripts / arquivos
 
-- `README.md`: você deve modificá-lo para explicar as informações necessárias para
-  o uso da sua aplicação web, bem como uma introdução à aplicação, sua funcionalidade
-  e decisões de design que você tomou.
+- `README.md`: explicar as informações necessárias para
+  o uso de minha aplicação web, bem como uma introdução à aplicação, sua funcionalidade
+  e decisões de design que tomei.
 - `.github/workflows`: esta pasta contém a configuração para
 a execução do Github Actions.
-  Você não deve modificar esta pasta nem seu conteúdo.
+  Não devo modificar esta pasta nem seu conteúdo.
 - `read-only/`: esta pasta contém os testes dos critérios mínimos de aceitação
-e end-to-end. Você não deve modificar esta pasta nem seu conteúdo.
-- [`src/index.html`](./src/index.html): este é o ponto de entrada da sua aplicação.
+e end-to-end. Não devo modificar esta pasta nem seu conteúdo.
+- [`src/index.html`](./src/index.html): este é o ponto de entrada da minha aplicação.
   Este arquivo deve conter o seu HTML.
 - [`src/style.css`](./src/style.css): este arquivo deve conter as regras de
-estilo. Queremos que você escreva suas próprias regras, portanto, NÃO é
+estilo. Escrevi minhas próprias regras, portanto, NÃO é
 permitido o uso de frameworks de CSS (Bootstrap, Materialize, etc).
-- [`src/analyzer.js`](./src/analyzer.js): aqui você deve implementar
+- [`src/analyzer.js`](./src/analyzer.js): implementei
 o objeto `analyzer`, que já está _exportado_ no _boilerplate_.
-Este objeto (`analyzer`) deve conter seis métodos:
+Este objeto (`analyzer`) contém seis métodos:
 
   + `analyzer.getWordCount(text)`: esta função deve retornar a contagem de
   palavras que estão no parâmetro `text` do tipo `string`.
@@ -148,7 +135,7 @@ Este objeto (`analyzer`) deve conter seis métodos:
   comprimento médio das palavras que estão no parâmetro `text` do tipo
   `string`. Use 2 casas decimais.
 
-  Para exemplos de uso de cada função, recomendamos ver o arquivo
+  Para exemplos de uso de cada função, recomendo ver o arquivo
   [`test/analyzer.spec.js`](./test/analyzer.spec.js).
 
   _Nota: para simplificar as funcionalidades, definiremos palavras como grupos
@@ -160,7 +147,7 @@ Este objeto (`analyzer`) deve conter seis métodos:
   + _`consegue`_
   + _`fazer!`_
 
-- [`src/index.js`](./src/index.js): aqui você deve ouvir eventos do DOM,
+- [`src/index.js`](./src/index.js): Ouvir eventos do DOM,
 invocar os métodos do objeto `analyzer` conforme necessário e atualizar
 o resultado na IU (interface de usuária).
 - [`test/analyzer.spec.js`](./test/analyzer.spec.js): este arquivo contém os
@@ -170,12 +157,12 @@ testes unitários para os métodos do objeto `analyzer`.
 
 #### Deploy
 
-Fazer com que os sites sejam publicados (ou _deployed_) para que as usuárias da
-web possam acessá-los é algo comum em projetos de desenvolvimento de software.
+Fiz com que sites fossem publicados (ou _deployed_) para que as usuárias da
+web possam acessá-los. É algo comum em projetos de desenvolvimento de software.
 
-Neste projeto, usaremos o _Github Pages_ para implantar nosso site.
+Neste projeto, usei o _Github Pages_ para implantar o site.
 
-O comando `npm run deploy` pode ajudá-lo com essa tarefa e você também pode
+O comando `npm run deploy` ajuda com essa tarefa e também podemos
 consultar a [documentação oficial](https://docs.github.com/pt/pages).
 
 ## 6. Critérios de Aceitação Mínimos do Projeto
@@ -397,17 +384,17 @@ relacionados a cada objetivo de aprendizado.
 
 - **GitHub: Criação de conta e repositórios, configuração de chaves SSH**
 
-  + [ ] A estudante criou uma conta no Github.
+  + [ ] Criei uma conta no Github.
 
-  + [ ] A estudante configurou sua conta do Github com uma chave SSH.
+  + [ ] Configurei minha conta do Github com uma chave SSH.
 
 - **Git: Controle de versões com git (clone, add, commit, push)**
 
-  + [ ] A estudante criou um _fork_ para o projeto.
+  + [ ] Criei um _fork_ para o projeto.
 
-  + [ ] A estudante clonou seu repositório usando uma chave SSH.
+  + [ ] Clonei meu repositório usando uma chave SSH.
 
-  + [ ] A estudante criou _commits_ e os salvou no Github.
+  + [ ] Criei _commits_ e os salvei no Github.
 
 - **GitHub: Implantação com GitHub Pages**
 
@@ -421,7 +408,7 @@ relacionados a cada objetivo de aprendizado.
 
 - **Projetar em diferentes níveis de fidelidade**
 
-  + [ ] A estudante criou protótipos de baixa fidelidade para a UI (interface gráfica).
+  + [ ] Criei protótipos de baixa fidelidade para a UI (interface gráfica).
 
 - **Seguir os princípios básicos do design visual**
 
@@ -446,7 +433,7 @@ Os testes unitários deste projeto executarão os métodos `getWordCount`,
 `getNumbersSum` e `getAverageWordLength` com diferentes argumentos e verificarão
 se os valores retornados são os esperados.
 
-Você pode executar esses testes com o comando `npm run test` como mostrado
+Podemos executar esses testes com o comando `npm run test` como mostrado
 na imagem a seguir:
 
 ![npm run test](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650584-c8267968-d631-4fbb-b05f-458a970544b7.gif "npm run test")
@@ -464,22 +451,22 @@ vamos seguir as recomendações _padrão_ tanto do `eslint` quanto do `htmlhint`
 
 ### Testes de Critérios Mínimos de Aceitação
 
-Esses testes analisarão seus arquivos
+Esses testes analisarão meus arquivos
 [`index.html`](src/index.html),
 [`index.js`](src/index.html),
 [`analyzer.js`](src/analyzer.js)
 e
 [`style.css`](src/style.css)
-para verificar se você cumpre os
+para verificar se cumprimos os
 [critérios mínimos de aceitação](#6-critérios-de-aceitação-mínimos-do-projeto).
 Cada critério está relacionado a um objetivo de aprendizado.
 
-Você pode executar todos esses testes com o comando `npm run test:oas`
+Podemos executar todos esses testes com o comando `npm run test:oas`
 como mostrado na imagem a seguir:
 
 ![npm run test oas](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650602-f0ca9170-7563-4edc-9e78-874fa012c4fd.gif "npm run test oas")
 
-Você também pode executar os testes de cada grupo de objetivos de aprendizado
+Podemos executar os testes de cada grupo de objetivos de aprendizado
 individualmente com os seguintes comandos:
 
 - `npm run test:oas-html`
@@ -494,7 +481,7 @@ o funcionamento de todo o sistema, do início ao fim. Em outras palavras, é tes
 o fluxo completo do software, simulando a interação da usuária com a aplicação,
 para garantir que todas as partes do sistema funcionem corretamente em conjunto.
 
-Você pode executar esses testes com o comando `npm run test:e2e` como mostrado
+Podemos executar esses testes com o comando `npm run test:e2e` como mostrado
 na imagem a seguir:
 
 ![npm run test e2e](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650622-a4da630e-8d39-4dd8-9fde-1a38c31a53e2.gif "npm run test e2e")
@@ -506,7 +493,7 @@ os testes unitários, testes de critérios mínimos de aceitação e
 testes end-to-end toda vez que você fizer um _push_ no ramo
 _main_ do seu repositório.
 
-Você pode verificar o resultado desta GitHub Action
+Podemos verificar o resultado desta GitHub Action
 na aba _Actions_ do seu repositório no GitHub,
 como mostrado na seguinte imagem:
 
@@ -514,27 +501,27 @@ como mostrado na seguinte imagem:
 
 ## 8. Dicas, sugestões e leituras complementares
 
-### Prepare o seu PC para trabalhar
+### Preparando o meu PC para trabalhar
 
-Antes de começar, instale o seguinte:
+Antes de começar, instalei o seguinte:
 
 1. [Node.js](https://nodejs.org/pt-br/)
-2. [git](https://git-scm.com/download/) Se você estiver no Linux, é provável
+2. [git](https://git-scm.com/download/)  No Linux, é provável
 que já esteja instalado 👀.
 Para aprender mais sobre o git, visite este [link](https://curriculum.laboratoria.la/pt/topics/scm/git)
 3. Um editor de código, recomendamos o [Visual Studio Code](https://code.visualstudio.com/)
 
 Depois, no [GitHub](https://github.com/):
 
-1. Crie uma conta. Saiba mais sobre o GitHub neste [link](https://curriculum.laboratoria.la/pt/topics/scm/github/github)
-2. Faça um _fork_ deste projeto
-3. Configure sua chave SSH no GitHub. Você pode conferir este
+1. Criei uma conta. Saiba mais sobre o GitHub neste [link](https://curriculum.laboratoria.la/pt/topics/scm/github/github)
+2. Fiz um _fork_ deste projeto
+3. Configurei minha chave SSH no GitHub. Você pode conferir este
 [vídeo](https://www.youtube.com/watch?v=7YVQLZp1jb0), este
 [artigo](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 ou [esse](https://www.freecodecamp.org/portuguese/news/como-obter-e-configurar-suas-chaves-ssh-do-git-e-do-github/)
 
 Depois, em um [shell](https://curriculum.laboratoria.la/pt/topics/shell),
-execute o seguinte. Se você estiver no Windows, pode usar o Git Bash:
+executei o seguinte. Se você estiver no Windows, pode usar o Git Bash:
 
 1. Clone o _fork_ para o seu PC
 2. Navegue até o diretório do projeto clonado no seu shell
@@ -544,31 +531,7 @@ execute o seguinte. Se você estiver no Windows, pode usar o Git Bash:
    `http://localhost:3000` no seu navegador.
 6. Agora é só codar! :rocket:
 
-### Recursos e tópicos relacionados
-
-Junte-se ao canal do Slack [#project-text-analyzer-pt](https://claseslaboratoria.slack.com/archives/C067QN2GFCM)
-
-## 9. Considerações para solicitar seu Feedback de Projeto
-
-Antes de agendar seu Feedback de Projeto com um coach, certifique-se de que seu projeto:
-
-- [ ] Atende a todos os critérios mínimos de aceitação ao executar `npm run test:oas`
-- [ ] Atende a todos os testes unitários ao executar `npm run test`
-- [ ] Atende a todos os testes _end to end_ ao executar `npm run test:e2e`
-- [ ] Está livre de _erros_ do `eslint` ao executar `npm run test`
-- [ ] Está hospedado no GitHub.
-- [ ] Está implantado no GitHub Pages.
-- [ ] Possui um README com a definição do produto.
-
-Lembre-se de que você deve fazer uma autoavaliação dos
-_objetivos de aprendizado_ e _habilidades para a vida_ em seu painel do aluno.
-
-Se você não concluiu tudo o que foi mencionado acima, consideramos que você
-não está pronta para sua sessão de Feedback de Projeto.
-
-## 10. Objetivos de aprendizagem
-
-Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
+## 10. Utilizados no projeto:
 
 ### HTML
 
@@ -729,20 +692,19 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
 
 - [ ] **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
 
-## 11. Funcionalidades opcionais
+## 10. Funcionalidades opcionais
 
-Se você terminou com todas as [funcionalidades requeridas](#4-funcionalidades),
-tente implementar as seguintes funcionalidades opcionais para aprofundar nos
+Terminei com todas as [funcionalidades requeridas](#4-funcionalidades), implementei as seguintes funcionalidades opcionais para aprofundar nos
 objetivos de aprendizado do projeto:
 
-- Faça com que a contagem de palavras e caracteres seja 0 para uma entrada de
+- Fiz com que a contagem de palavras e caracteres retornasse 0 para uma entrada de
 texto vazia.
-- Faça com que a contagem de palavras e caracteres seja 0 para uma entrada de
+- Fiz com que a contagem de palavras e caracteres retornasse 0 para uma entrada de
 texto contendo apenas espaços.
-- Faça com que a contagem de palavras e caracteres seja 0 para uma entrada de
+- Fiz com que a contagem de palavras e caracteres retornasse 0 para uma entrada de
 texto contendo apenas caracteres de pontuação.
 
-Você pode habilitar os testes unitários e _end-to-end_ para esses casos nos
+Habilitei os testes unitários e _end-to-end_ para esses casos nos
 arquivos [test/analyzer.spec.js](test/analyzer.spec.js) e
 [read-only/test/e2e/app.spec.js](read-only/test/e2e/app.spec.js).
-Você também precisará ajustar os testes existentes para as funcionalidades requeridas.
+Ajustei os testes existentes para as funcionalidades requeridas.

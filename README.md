@@ -76,7 +76,7 @@ A lista de funcionalidades é a seguinte:
 3. A aplicação permite limpar o conteúdo da caixa de texto ao clicar
     em um botão.
 
-![Demonstração do analisador de texto](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Demonstração do analisador de texto")
+![Demonstração do analisador de texto](textanalyzer.gif "Demonstração do analisador de texto")
 
 ## 5. Padrão
 A lógica do projeto é completamente renovada em JavaScript. Neste projeto, NÃO foi permitido o uso de bibliotecas ou frameworks, apenas JavaScript puro, também conhecido como Vanilla JavaScript.
